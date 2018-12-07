@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './TicTac'
+import Game from './components/TicTac'
 
 
 ReactDOM.render(<Game />, document.getElementById('root'));
