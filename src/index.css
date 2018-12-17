@@ -1,10 +1,32 @@
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: grey; 
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: darkgray; 
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: gainsboro; 
+  }
+}
+
 body {
     font: 20px "Century Gothic", Futura, sans-serif;
     margin: auto;
     align-content: center;
     width: 20%;
     padding: 200px;
-    background: mediumaquamarine;
+  
+    
 
   }
   
@@ -15,7 +37,8 @@ body {
   .board-row:after {
     clear: both;
     content: "";
-    display: table;
+    display: flex;
+    
   }
   
   .status {
@@ -28,13 +51,13 @@ body {
     float: left;
     font-size: 24px;
     font-weight: bold;
-    line-height: 68x;
-    height: 68px;
+    line-height: 45px;
+    height: 45px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 68px;
+    width: 45px;
   }
   
   .square:focus {
@@ -48,6 +71,9 @@ body {
   .game {
     display: flex;
     flex-direction: row;
+    flex: initial;
+    width: 300px;
+    
   }
   
   .game-info {
